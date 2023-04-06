@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+@mixin h1-text-mobile {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 2.7rem;
+    text-align: center;
+    color: #293356;
+}
+
+@mixin h1-text-desktop {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 2.8em;
+    line-height: 3.8rem;
+}
+
+@mixin h2-text-mobile {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3em;
+    line-height: 2.3rem;
+    text-align: center;
+    color: #848EAD;
+}
+
+@mixin h2-text-desktop {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 2rem;
+}
+
+@mixin h3-text-mobile {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.2em;
+    line-height: 1.6rem;
+    text-align: center;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+    color: #848EAD;
+}
+
+@mixin h3-text-desktop {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 1.4em;
+    line-height: 1.9rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+@mixin price-text-mobile {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.2em;
+    line-height: 4.4rem;
+    letter-spacing: -0.8px;
+    color: #293356;
+}
+
+@mixin price-text-desktop {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 4em;
+    line-height: 5.5rem;
+    text-align: right;
+    letter-spacing: -1px;
+}
+
+@mixin time-text-mobile {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #848EAD;
+}
+
+@mixin time-text-desktop {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 1.6em;
+    line-height: 2.2rem;
+}
+
+@mixin p-text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.6rem;
+    text-align: center;
+    color: #848EAD;
+}
+
+@mixin button-text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.2em;
+    line-height: 1.6rem;
+    text-align: center;
+    color: #BECDFF;
+}
+
+@mixin discount-text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 1.4rem;
+    text-align: center;
+    color: #FF8D68;
+}

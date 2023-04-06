@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+  background-image: url(/interactive-price/images/bg-pattern.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 5.6rem;
+  padding-bottom: 8.8rem;
+}
+
+.card-container {
+  width: 32.7rem;
+  height: 47.8rem;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+  border-radius: 0.8rem;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+.card-container .slider-price {
+  padding: 3.4rem 0 3.2rem 0;
+}
+.card-container h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.2em;
+  line-height: 1.6rem;
+  text-align: center;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+  color: #848EAD;
+}
+.card-container #slider {
+  width: 27.9rem;
+  height: 0.8rem;
+  margin: 4.1rem auto 4rem auto;
+  background: #ECF0FB;
+  border-radius: 5px;
+  position: relative;
+}
+.card-container #slider #circle {
+  width: 4rem;
+  height: 4rem;
+  background: #10D8C4;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  border-radius: 50%;
+  position: absolute;
+  top: -1.55rem;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container #slider #circle:hover {
+  cursor: pointer;
+}
+.card-container #price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.card-container #price #dollar {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.2em;
+  line-height: 4.4rem;
+  letter-spacing: -0.8px;
+  color: #293356;
+}
+.card-container #price #time {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4em;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #848EAD;
+}
+.card-container #billing {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 3.8rem;
+  justify-content: center;
+  align-items: center;
+}
+.card-container #billing p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #848EAD;
+}
+.card-container #billing .discount {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1em;
+  line-height: 1.4rem;
+  text-align: center;
+  color: #FF8D68;
+  width: 4.1rem;
+  height: 1.9rem;
+  background: #FEEDE8;
+  border-radius: 9.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container #billing .discount span {
+  display: none;
+}
+.card-container #billing #bill {
+  width: 4.3rem;
+  height: 2.2rem;
+  background: #CFD8EF;
+  border-radius: 15px;
+  border: none;
+}
+.card-container #billing #bill:hover {
+  cursor: pointer;
+  background: #7AEADF;
+}
+.card-container #billing #bill .ball {
+  width: 1.4rem;
+  height: 1.4rem;
+  background: #FFFFFF;
+  border-radius: 50%;
+  transition: all 0.5s ease-in;
+}
+.card-container .line {
+  width: 100%;
+  height: 0.1rem;
+  background: #ECF0FB;
+}
+.card-container .trial {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .trial ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card-container .trial li {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #848EAD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.card-container .trial .check {
+  width: 0.7rem;
+  height: 1rem;
+  background-image: url(/interactive-price/images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.card-container .trial .btn-trial {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.2em;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #BECDFF;
+  width: 17rem;
+  height: 4.1rem;
+  background: #293356;
+  border-radius: 20.5px;
+  border: none;
+  margin-top: 3.2rem;
+}
+.card-container .trial .btn-trial:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding-top: 6.7rem;
+  }
+  .card-container {
+    margin-top: 5.4rem;
+    width: 54rem;
+    height: 39.7rem;
+  }
+  .card-container .slider-price {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+  .card-container .slider-price h3 {
+    grid-column: 1/2;
+    grid-row: 1/1;
+    margin-top: 2.5rem;
+    font-family: "Manrope";
+    font-style: normal;
+    font-size: 1.4em;
+    line-height: 1.9rem;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .card-container #price {
+    margin-left: -3rem;
+  }
+  .card-container #price #dollar {
+    font-family: "Manrope";
+    font-style: normal;
+    font-size: 4em;
+    line-height: 5.5rem;
+    text-align: right;
+    letter-spacing: -1px;
+  }
+  .card-container #price #time {
+    font-family: "Manrope";
+    font-style: normal;
+    font-size: 1.6em;
+    line-height: 2.2rem;
+  }
+  .card-container #slider {
+    grid-row: 2/2;
+    width: 44.4rem;
+    margin-left: 4.8rem;
+  }
+  .card-container #billing {
+    gap: 1.6rem;
+    margin-bottom: 4rem;
+    margin-left: 11.5rem;
+  }
+  .card-container #billing .discount {
+    width: 8rem;
+    height: 2rem;
+  }
+  .card-container #billing .discount span {
+    display: block;
+  }
+  .card-container .trial {
+    margin-top: 3.2rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card-container .trial .btn-trial {
+    margin-top: -0.5rem;
+  }
+}
+header {
+  width: 32.6rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.8rem;
+  margin: 0 auto;
+  background-image: url(/interactive-price/images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+header h1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2em;
+  line-height: 2.7rem;
+  text-align: center;
+  color: #293356;
+}
+header h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3em;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #848EAD;
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    width: 39.5rem;
+    height: 14.5rem;
+  }
+  header h1 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-size: 2.8em;
+    line-height: 3.8rem;
+  }
+  header h2 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 2rem;
+  }
+  header h2 br {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

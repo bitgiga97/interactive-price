@@ -1,0 +1,209 @@
+@import 'fonts';
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    background-image: url(/interactive-price/images/bg-pattern.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 5.6rem;
+    padding-bottom: 8.8rem;
+}
+
+.card-container {
+    width: 32.7rem;
+    height: 47.8rem;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    border-radius: 0.8rem;
+    margin: 0 auto;
+    margin-top: 3.2rem;
+    .slider-price {
+        padding: 3.4rem 0 3.2rem 0;
+    }
+    h3 {
+        @include h3-text-mobile;
+    }
+    #slider {
+        width: 27.9rem;
+        height: 0.8rem;
+        margin: 4.1rem auto 4rem auto;
+        background: #ECF0FB;
+        border-radius: 5px;
+        position: relative;
+        #circle {
+            width: 4rem;
+            height: 4rem;
+            background: #10D8C4;
+            box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+            border-radius: 50%;
+            position: absolute;
+            top: -1.55rem;
+            left: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    #price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        #dollar {
+            @include price-text-mobile;
+        }
+        #time {
+            @include time-text-mobile;
+        }
+    }
+    #billing {
+        display: flex;
+        gap: 1.2rem;
+        margin-bottom: 3.8rem;
+        justify-content: center;
+        align-items: center;
+        p {
+            @include p-text;
+        }
+        .discount {
+            @include discount-text;
+            width: 4.1rem;
+            height: 1.9rem;
+            background: #FEEDE8;
+            border-radius: 9.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                display: none;
+            }
+        }
+        #bill {
+            width: 4.3rem;
+            height: 2.2rem;
+            background: #CFD8EF;
+            border-radius: 15px;
+            border: none;
+            &:hover {
+                cursor: pointer;
+                background: #7AEADF;
+            }
+            .ball {
+                width: 1.4rem;
+                height: 1.4rem;
+                background: #FFFFFF;
+                border-radius: 50%;
+                transition: all 0.5s ease-in;
+            }
+        }
+    }
+    .line {
+        width: 100%;
+        height: 0.1rem;
+        background: #ECF0FB;
+    }
+    .trial {
+        margin-top: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem
+        }
+        li {
+            @include p-text;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.6rem;
+        }
+        .check {
+            width: 0.7rem;
+            height: 1rem;
+            background-image: url(/interactive-price/images/icon-check.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .btn-trial {
+            @include button-text;
+            width: 17rem;
+            height: 4.1rem;
+            background: #293356;
+            border-radius: 20.5px;
+            border: none;
+            margin-top: 3.2rem;
+            &:hover {
+                cursor: pointer;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        padding-top: 6.7rem;
+    }
+    .card-container {
+        margin-top: 5.4rem;
+        width: 54rem;
+        height: 39.7rem;
+        .slider-price {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            h3 {
+                grid-column: 1/2;
+                grid-row: 1/1;
+                margin-top: 2.5rem;
+                @include h3-text-desktop;
+            }
+        }
+        #price {
+            margin-left: -3rem;
+            #dollar {
+                @include price-text-desktop;
+            }
+            #time {
+                @include time-text-desktop;
+            }
+        }
+        #slider {
+            grid-row: 2/2;
+            width: 44.4rem;
+            margin-left: 4.8rem;
+        }
+        #billing {
+            gap: 1.6rem;
+            margin-bottom: 4rem;
+            margin-left: 11.5rem;
+            .discount {
+                width: 8rem;
+                height: 2rem;
+                span {
+                    display: block;
+                }
+            }
+        }
+        .trial {
+            margin-top: 3.2rem;
+            flex-direction: row;
+            justify-content: space-around;
+            .btn-trial {
+                margin-top: -0.5rem;
+            }
+        }
+    }
+}
