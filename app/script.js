@@ -11,7 +11,17 @@ billButton.addEventListener("click", () => {
     }
 });
 
+let slider = document.getElementById("slider");
+let output = document.getElementById("pageviews");
+output.innerHTML = slider.value + "\xa0 PAGEVIEWS"; // Display the default slider value
 
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+
+    output.innerHTML = this.value + "\xa0 PAGEVIEWS";
+
+}
+console.log(slider.value);
 // console.log(time);
 // console.log(ballButton);
 // console.log(billButton.firstChild);

@@ -9,7 +9,6 @@ body {
     height: 100vh;
     font-family: 'Manrope', sans-serif;
     background-image: url(/interactive-price/images/bg-pattern.svg);
-    background-size: contain;
     background-repeat: no-repeat;
     padding-top: 5.6rem;
     padding-bottom: 8.8rem;
@@ -32,10 +31,34 @@ body {
     #slider {
         width: 27.9rem;
         height: 0.8rem;
+        background: #ECF0FB;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #slider {
+        width: 27.9rem;
+        height: 0.8rem;
         margin: 4.1rem auto 4rem auto;
         background: #ECF0FB;
         border-radius: 5px;
         position: relative;
+        -webkit-appearance: none;
+        /* Override default CSS styles */
+        appearance: none;
+        background: #d3d3d3;
+        /* Grey background */
+        outline: none;
+        /* Remove outline */
+        opacity: 0.7;
+        /* Set transparency (for mouse-over effects on hover) */
+        -webkit-transition: .2s;
+        /* 0.2 seconds transition on hover */
+        transition: opacity .2s;
+        &:hover {
+            cursor: pointer;
+        }
         #circle {
             width: 4rem;
             height: 4rem;
@@ -52,6 +75,24 @@ body {
                 cursor: pointer;
             }
         }
+    }
+    #slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        /* Override default look */
+        appearance: none;
+        width: 4rem;
+        /* Set a specific slider handle width */
+        height: 4rem;
+        /* Slider handle height */
+        background: #10D8C4;
+        /* Green background */
+        cursor: pointer;
+        /* Cursor on hover */
+        border-radius: 50%;
+        box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+        background-image: url(/interactive-price/images/icon-slider.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     #price {
         display: flex;
@@ -155,6 +196,7 @@ body {
 @media screen and (min-width:1440px) {
     body {
         padding-top: 6.7rem;
+        background-size: contain;
     }
     .card-container {
         margin-top: 5.4rem;
@@ -184,6 +226,7 @@ body {
             grid-row: 2/2;
             width: 44.4rem;
             margin-left: 4.8rem;
+            margin-top: 2.4rem;
         }
         #billing {
             gap: 1.6rem;
