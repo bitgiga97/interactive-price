@@ -238,6 +238,16 @@ body {
   text-align: center;
   color: #848EAD;
 }
+.card-container #price #sign {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.2em;
+  line-height: 4.4rem;
+  letter-spacing: -0.8px;
+  color: #293356;
+  margin-right: -1rem;
+}
 .card-container #billing {
   display: flex;
   gap: 1.2rem;
@@ -390,6 +400,16 @@ body {
     font-style: normal;
     font-size: 1.6em;
     line-height: 2.2rem;
+  }
+  .card-container #price #sign {
+    font-family: "Manrope";
+    font-style: normal;
+    font-size: 4em;
+    line-height: 5.5rem;
+    text-align: right;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin-right: -1rem;
   }
   .card-container #slider {
     grid-row: 2/2;

@@ -105,6 +105,10 @@ body {
         #time {
             @include time-text-mobile;
         }
+        #sign {
+            @include price-text-mobile;
+            margin-right: -1rem;
+        }
     }
     #billing {
         display: flex;
@@ -220,6 +224,11 @@ body {
             }
             #time {
                 @include time-text-desktop;
+            }
+            #sign {
+                @include price-text-desktop;
+                font-weight: 800;
+                margin-right: -1rem;
             }
         }
         #slider {

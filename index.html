@@ -16,20 +16,15 @@
     </header>
     <main class="card-container">
         <div class="slider-price">
-            <h3 id="pageviews"><span id="output"></span> PAGEVIEWS</h3>
-            <!-- <div class="slider">
-                <div id="circle"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="13"><g fill="#80FFF3" fill-rule="evenodd"><path d="M16 2.558v7.884a1 1 0 001.735.679l3.639-3.943a1 1 0 000-1.356l-3.64-3.943A1 1 0 0016 2.558zM6 2.558v7.884a1 1 0 01-1.735.679L.626 7.178a1 1 0 010-1.356l3.64-3.943A1 1 0 016 2.558z"/></g></svg></div>
-            </div> -->
-            <input type="range" name="slider" id="slider" list="markers" min="0" max="4" value='{
-              0: "10K",
-              1: "50K",
-              2: "100K",
-              3: "500K",
-              4: "1M"
-          }' step="1">
+            <h3 id="pageviews" class="pageviews"><span id="output"></span> PAGEVIEWS</h3>
+
+            <input type="range" name="slider" id="slider" class="pricing-slider" min="0" max="4" step="1">
 
             <div id="price">
-                <div id="dollar">$16.00</div>
+                <p id="sign">$</p>
+                <div id="dollar">
+
+                </div>
 
                 <div id="time">/ month</div>
             </div>
